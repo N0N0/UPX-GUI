@@ -1,0 +1,114 @@
+============================================================================
+		       UPX-GUI 2002 v3.00                      20. Mai 2006
+============================================================================
+					   Copyright (C) 2001-2007, -=pYRo=-
+
+Inhalt
+======
+1.	Einführung
+2.	Warum denn noch ne GUI???
+3.	Lizensvereinbarung
+4.	Enthaltene Dateien
+5.	Installation & Anwendung
+6.	De-Installation
+7.	Bekannte Fehler/Einschränkungen
+8.	Zukunftsvisionen
+
+
+1. Einführung
+=============
+UPX-GUI ist eine Windows Benutzeroberfläche (GUI = Graphical User Interface)
+für den bekannten EXE-Packer UPX von Markus Oberhumer & Laszlo Molnar
+(www.upx.com).
+
+
+2. Warum denn noch ne GUI???
+============================
+Die Programme UPX-GUI 2001 und Lympspx wurden von mir nachgebaut und
+so weiterentwickelt, das mein Proggie nun alle bisherigen GUIs bei weitem
+übertrifft. Außerdem hat es genenüber allen anderen bisher auf dem Markt
+erhältlichen GUI's den Vorteil, das es seit Ende 2001 ständig weiter-
+entwickelt wurde.
+
+
+3. Lizenzvereinbarung
+=====================
+UPX-GUI sowie dessen Quellcode stehen unter der GNU General Public License
+(Version 2), nähere Informationen darüber entnehmen Sie bitte der Datei,
+GNU.txt in diesem Verzeichnis.
+
+Es wäre schön, wenn Ihr mir eure Veränderungen am Programm zuschicken würdet
+damit ich diese bei Bedarf in das Programm einbinden kann (Derivate nützen
+niemanden...).
+
+
+4. Enthaltene Dateien
+=====================
+Im Umfang dieses Programmes sind volgende Dateien enthalten:
+GNU.txt		Lizenzvertrag der GNU (General Public License)
+Liesmich.txt	Diese Datei
+UPXGUI.exe	UPX-GUI 2002 v1.25
+Ordner "src"	Der Quellcode von UPX-GUI 2002 (VB6 + Service Pack 5).
+Ordner "files"	In diesem Ordner liegen die momentan genutzte Version von
+                UPX sowie UPXFix.
+
+
+5. Installation & Anwendung
+===========================
+Installation:
+Die Installation von UPX-GUI 2002 ist ganz einfach, entpacken Sie einfach
+alle in diesem Archiv enthaltenen Dateien in ein Verzeichnis ihrer Wahl auf
+Ihrer Festplatte und benutzen Sie UPXGUI.EXE um das Programm zu starten.
+
+Anwendung:
+Auch die Anwendung von UPX-GUI 2002 ist sehr einfach, starten Sie das
+Programm, klicken Sie auf "Öffnen", oder Doppelklicken Sie auf das Textfeld
+"Zieldatei", um die zu bearbeitende Datei auszuwählen und klicken sie auf
+Packen, Entpacken oder Scannen um die ausgewählte Datei zu bearbeiten.
+Sie können jedoch auch zuerst auf die jew. Funktions-Buttons klicken und
+erst danach eine Zieldatei auswählen.
+
+Ein Wort zur Funktion "Scannen":
+Seit v1.25 (Build 7) wird zum Scannen von Dateien das Programm "PE iDENTIFIER
+v0.92" (c)2004 by "snaker, Qwerton & Jibz Productions" verwendet. Dieses
+Programm wird nicht zusammen mit UPXGUI verbreitet, sondern muss separat von
+http://peid.has.it heruntergeladen werden und dann in das Unterverzeichnis
+"files" im UPXGUI Installationsordner entpackt werden (z. B.:
+C:\UPX-GUI 2002\files\PEiD.EXE).
+
+6. De-Installation
+==================
+Sollten Sie doch irgendwann mal der Meinung sein, das UPX-GUI Ihnen nicht
+gefällt, müssen Sie einfach nur den UPX-GUI Ordner löschen und Sie sind es
+los, UPX-GUI erstellt keinen einzigen Eintrag in Ihrer Registry oder legt
+irgendwelche .ini Dateien in Ihrem Windows-Ordner ab. Einfach oder?
+
+
+7. Bekannte Fehler/Einschränkungen
+==================================
+Fehler:
+P: Das Status-Fenster gibt nur ungenaue Angaben über aufgetretene Fehler
+L: Arbeite drann :)
+
+P: Die Erweiterten Einstellungen werden bei jedem Aufruf zurück gesetzt.
+L: Ist ein Design-Fehler im Code der etwas Arbeit in Anspruch nimmt...
+
+Einschränkungen:
+- Noch sind nicht alle Funktionen von UPX konfigurierbar.
+- Bisher gibt es keinen, mir bekannten, EXE-/File-Scanner der wenigstens die
+  aktuellsten PE-Modifizierer zuverlässig erkennt.
+- Keine Unterstützung des Kontext-Menü's
+
+
+8. Zukunftsvisionen
+===================
+Hier mal kurz alles was ich noch in mein Proggie reinpacken will:
+- BATCH Funtkionen
+- Interne Unterstützung für upxfix oder eigenen Upx-Scrambler-Descrambler
+  (lustiges Wort ;o)
+- Möglichkeit die Optionen zu speichern (lieber .ini als Registry...)
+- Fehlerfreiheit  ..: wird wohl nie geschehen :-(
+
+
+(C)2001-2007 by -=pYRo=-
+Kontakt: oryp-kallis@gmx.at

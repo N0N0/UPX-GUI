@@ -1,0 +1,2 @@
+Programm: UPX-GUI 2002 v2.00
+Sprache: Visual Basic 6.0 Enterprise SP-5

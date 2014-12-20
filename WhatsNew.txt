@@ -1,0 +1,116 @@
+What's New
+==========
+3.00
+ Neuerungen:
+ - UPX v3.00 (Keine Unterstützung für neue Kommandozeilenparameter)
+
+2.00
+ Neuerungen:
+ - UPX v2.00 (keine Unterstützung für neue Kommandozeilenparameter!)
+ - Neuunterstützte Dateitypen in Dateiauswahlmaske integriert *Bitte um
+    Rückmeldung wenn jemand dort vorhandene Fehler korrigieren kann, da ich
+    mit nicht MS basierten Dateitypen kaum Erfahrung habe*
+
+1.25
+ Neuerungen:
+ - Der UPXFIX-Warnhinweis bietet jetzt die Möglichkeit den Start abzubrechen
+ - Scannen wird nun mit "PE iDENTIFIER" vorgenommen (siehe Liesmich.txt),
+   es ersetzt ab sofort PE-Scan.
+ - Wenn ohne ausgewählte Zieldatei auf eine Funktion geklickt wird, startet
+   jetzt ohne weiteren Hinweis die Dateiauswahlmaske
+ - NSIS v2.11 Installer
+ BugFixing:
+ - Absturz beim Versuch ein laufendes Programm wiederherzustellen
+ - Bildschirmschoner (.SCR) waren nicht in der Dateiauswahl verfügbar
+ - Zeilenumbruch in Toolbar bei großen Schriftarten
+
+1.24
+ Neuerungen:
+ - Die Versionsauswahl wurde entfernt, da UPX zu allen vorherigen Versionen
+   bis v0.90 abwärtskompatibel ist.
+ - Die UPX-GUI Revisionsnummer stimmt ab jetzt mit der, der verwendeten
+   UPX-Version überein, den Entwicklungsstand von UPX-GUI spiegelt die
+   Build-Nummer wieder. 
+ - Option "Letzte Datei merken" für Pack-/Entpack-Routine, für Scannen ist
+   diese Funktion immer an, für UPXFIX niemals.
+ - Win9x/ME & Win2K/XP Versionen jetzt in einer .EXE
+ - UPX-GUI kann nun nur noch in einer Instanz geöffnet werden.
+ BugFixing:
+ - Abstürze bei fehlender Backup-Datei behoben
+ - Kompressionsrate war immer auf "Standard" (egal was eingestellt wurde!)
+ - Das Hauptfenster wird nun auf allen Systemen korrekt dargestellt
+ - Einschränkungen für die Länge von Dateipfaden liegen jetzt nur noch bei UPX
+ - Liesmich.txt aufgeräumt/angepasst
+
+1.21 (Win9x/Me)
+ Neuerungen:
+ - Beta Support für die neuen UPX v1.22 & v1.23 (ohne die neuen Optionen)
+ - Unterstützung für "neue" alte UPX-Versionen:
+   0.05, 0.20, 0.30, 0.40, 0.50, 0.51, 0.761, 0.762, 0.763, 0.896
+   Danke hierfür an http://www.exetools.com/ (Aaron you Avatar ;o)
+   Hinweis: Die meisten dieser (sehr alten) Versionen sind leider sehr
+   absturzfreudig...
+ - Vorläufige Unterstütztung für UPXFIX (Bisher noch kaum getestet...)
+ BugFixing:
+ - About Box endlich mal aktualisiert
+ - Gab nen Absturz, wenn der Datei-Öffnen Dialog mit Doppelklick auf die
+   Zieldatei-Zeile geöffnet, und keine Datei ausgewählt wurde (Nicht in XP-
+   Version!).
+
+1.20
+ Neuerungen:
+ - Beta Support für die neue v1.21 (ohne die neuen Optionen)
+ - WindowsXP Unterstützung (Mußte nur unter XP Compiliert werden,liegt wohl
+   an einigen DLL-Imports)
+ - Unterstützt nun Testen, Original Wiederherstellen und Backup-löschen.
+ BugFixing (WinAll):
+ - Das UPXGUI-Fenster wurde auf einigen Systemen viel zu groß angezeigt
+   (vorrübergehend gelöst...)
+ - Das Entpacken stand auch für Pre-0.90 Versionen zur Verfügung, obwohl
+   diese es nicht unterstützen.
+ - Wenn ohne ausgewählte Zieldatei auf eine Funktion geklickt wurde, und auch
+   bei der darauffolgenden Dateiauswahl kein Ziel ausgewählt wurde, wurde UPX
+   trotzdem gestartet
+
+1.10
+ Neuerungen:
+ - Die UPX-Kommandozeilenausgabe wird nun direkt in UPX-GUI eingeblendet
+ - Dateifilter bietet nun alle unterstützten Windows-Dateiformate an
+ - Liesmich.txt angepasst/korrigiert
+ - Nutzlose Symbol-/Status-Leisten entfernt
+ - Oberfläche leicht verschönert
+ - Option "--best" wird nun für die UPX-Versionen 0.70 > 1.20 unterstützt
+ - Quellcode aufgeräumt
+ - Unterstützung für alle Kompressions Einstellungen (siehe Erweitert)
+ - UPX-Versionsauswahl verbessert
+ Bugfixing:
+ - Die Kompressionsrate wurde bei niedrigster und höchster Einstellung
+   ignoriert
+ - Lange Dateinamen & Namen mit Leerzeichen wurden nicht unterstützt
+ - UPX.EXE Erkennung war deaktiviert
+ - UPX-Versions-Auswahl funktionierte erst ab v0.83, alle darunterliegenden
+   Versionen waren verschoben
+ - UPX v0.70 war vorhanden, konnte aber nicht ausgewählt werden (s.o.)
+ - viele, viele kleinere Bugfixes
+
+1.00:
+ Hatte das Projekt ca. ein 1/2 Jahr auf Eis gelegt...
+ Neuerungen:
+ - Beta-Support für PE-Scan
+ - Datei-Filter erweitert (EXE & DLL Dateien)
+ - Einstellung der Kompressionsrate
+ - Oberfläche komplett umgebaut
+ - Unterstützung für Alle UPX-Versionen aus Lympspx (direkte Auswahl möglich!)
+ BugFixixng:
+ - Besseres Handling für Packen/Entpacken/Scannen bei noch nicht geöffneter
+   Zieldatei
+ - Liesmich.txt angepasst
+ - Programm erkennt ob UPX.EXE im selben Verzeichnis liegt
+
+0.90b:
+ - Backup Option
+ - Packen erzwingen Option
+
+?.??b
+ - 1. Version
+ - Packen & Entpacken von Dateien

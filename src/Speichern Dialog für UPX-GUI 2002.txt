@@ -1,0 +1,44 @@
+' Hier eine Möglichkeit für nen "Speichern unter..."-Dialog, bisher nicht eingebaut
+
+
+'Benötigt ein Textfeld "Text3.text" und einen CommonDialog
+
+'Datei speichern Dialog
+Private Sub mnuFileSaveAs_Click()
+
+    Dim sFileSave As String
+
+    With dlgCommonDialog
+        .DialogTitle = "Speichern unter..."
+        .CancelError = False
+        .Filter = "Alle Dateien (*.*) | *.*|Alle Unterstützten Dateien (*.COM; *.EXE; *.DLL; *.OCX; *.SYS)| *.COM; *.EXE; *.DLL; *.OCX; *.SYS|ActiveX Steuerelemente (*.OCX)| *.OCX|Anwendungen (*.EXE)| *.EXE|Anwendungen für MS-DOS (*.COM)| *.COM|Dynamische Link Bibliotheken (*.DLL)| *.DLL|Systemdateien (*.SYS)| *.SYS"
+        .FilterIndex = 1
+        .ShowOpen
+        If Len(.FileNameSave) = 0 Then
+            Exit Sub
+        End If
+        TargetFile = .FileNameSave
+        
+        '--Hier wird der DateiPfad in Pfad gesplittet
+        sFileSave = TargetFile
+        sPfadSave = Left$(sFileSave, InStrRev(sFileSave, "\"))
+        If Right$(sPfadSave, 1) = "\" Then _
+        sPfadSave = Left$(sPfadSave, Len(sPfadSave) - 1)
+
+        '--Hier wird der Pfad in 8.3 convertiert
+        Dim Result&, AA$
+    
+        AA = Space$(255)
+        Result = GetShortPathName(sPfadSave, AA, Len(AA))
+        sPfadSave = Mid$(AA, 1, Result)
+
+        '--Hier wird der Dateiname extrahiert
+        sFileSave = Right$(TargetFile, Len(TargetFile) - InStrRev(TargetFile, "\"))
+        sFileSave = "\" + sFileSave
+        
+        '--Hier wird der entgültige DateiPfad für die Kommandozeile erstellt
+        '--Die Funktion Chr(34) erzeugt ein " am Anfang und Ende des Dateipfades,
+        '--Somit wird die Unterstützung von langen Dateinamen in UPX gewärleistet.
+        Text3.Text = Chr(34) + sPfadSave + sFileSave + Chr(34)
+    End With
+End Sub
