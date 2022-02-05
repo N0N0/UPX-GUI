@@ -1,2 +1,2 @@
 * linguist-vendored
-*.vbp linguist-vendored=false
+*.vbp,*.bas linguist-vendored=false
