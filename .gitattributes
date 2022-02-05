@@ -1,4 +1,7 @@
 * linguist-vendored
-*.vbp linguist-vendored=false
 *.bas linguist-vendored=false
 *.frm linguist-vendored=false
+*.frx linguist-vendored=false
+*.scc linguist-vendored=false
+*.vbp linguist-vendored=false
+*.vbw linguist-vendored=false
